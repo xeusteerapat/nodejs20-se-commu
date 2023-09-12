@@ -153,6 +153,42 @@ test('synchronous passing test', async (t) => {
 
 ---
 
+## Node.js 20
+
+```js
+import { describe, it } from 'node:test';
+import { strictEqual } from 'node:assert';
+import { formatString } from './index.js';
+describe('Simple test in Node.js Native Test Runner', () => {
+  it('should format `A - ` to `A`', () => {
+    strictEqual(formatString('A - '), 'A');
+  });
+
+  it('should format `A - B` to `A - B`', () => {
+    strictEqual(formatString('A - B'), 'A - B');
+  });
+
+  it('should format `smartphone - ` to `smartphone`', () => {
+    strictEqual(formatString('smartphone - '), 'smartphone');
+  });
+
+  it('should format `phablet - Galaxy Note 8` to `phablet - Galaxy Note 8`', () => {
+    strictEqual(
+      formatString('phablet - Galaxy Note 8'),
+      'phablet - Galaxy Note 8'
+    );
+  });
+});
+```
+
+---
+
+# Node.js 20
+
+![Test result](/test_result.png)
+
+---
+
 # Thank you!
 
 ## Q&A
