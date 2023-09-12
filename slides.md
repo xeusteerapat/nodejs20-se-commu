@@ -9,9 +9,9 @@ theme: eloc
 
 ---
 
-## Node.js 14 to 20: Exploring What's New
+## Node.js 14 to 20
 
-(Also features recap in 14, 16, 18)
+## Exploring What's New
 
 ---
 
