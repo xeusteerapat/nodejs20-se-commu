@@ -1,6 +1,6 @@
 ---
-# https://github.com/slidevjs/slidev/blob/v0.42.5/packages/types/src/config.ts
 theme: eloc
+title: KT-AXA SE Community
 ---
 
 # KT-AXA SE Community
@@ -81,6 +81,7 @@ arr.at(); // falsy values always return 1st element
 - `fetch` API (Good bye node-fetch package)
 - `Array.prototype.findLast`
 - `Array.prototype.findLastIndex`
+- `structuredClone` (deep clone object)
 
 ---
 
@@ -112,6 +113,23 @@ numbers.findLast((n) => n % 2 === 0); // 8
 
 // Array.prototype.findLastIndex
 numbers.findLastIndex((n) => n % 2 === 0); // 7
+```
+
+---
+
+## Node.js 18
+
+```js
+// structuredClone
+const nestedObj = {
+  name: 'John',
+  age: 20,
+  company: {
+    name: 'AXA',
+  },
+};
+
+const clonedObj = structuredClone(nestedObj);
 ```
 
 ---
