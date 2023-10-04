@@ -17,7 +17,7 @@ title: KT-AXA SE Community
 
 ## Agenda
 
-1. Features recap in Node.js 14, 16, 18
+1. Features recap in Node.js 14, 16, 18 (include new Javascript features)
 2. Live demo
 
 ---
